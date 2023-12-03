@@ -1,6 +1,7 @@
 import express from 'express';
 import session from 'express-session';
 import login from './login.js';
+import path from 'path';
 
 const app = express();
 
@@ -23,7 +24,7 @@ app.get('/', (req, res) => {
   }
 });
 
-app.use('/', express.static('static'));
+app.use('/', express.static(path.join(process.cwd(), '/static')));
 
 const port = 8080;
 app.listen(port, () => {
