@@ -1,0 +1,48 @@
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    }
+
+    .home{
+        justify-content: start;
+    }
+    
+    .logsign{
+        justify-content: end;
+    }
+    
+    .logo{
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+.navbar a:hover {
+    background-color: #000;
+    }
+
+.active {
+    background-color: #FF7254;
+    }
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+footer{
+    background-color: #555;
+}

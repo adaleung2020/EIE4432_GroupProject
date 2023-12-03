@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Disney Concert",
+    "id": "Disney",
+    "type": "Fantasy",
+    "image": "assets/disney.jpg",
+    "price": "$450 $650 $950",
+    "date": "11/11/2024",
+    "time": "1600-1900",
+    "venue": "Hong Kong Cultural Centre",
+    "description": "This is a Disney Concert"
+  },
+
+  {
+    "name": "Harry Potter Concert",
+    "id": "HP",
+    "type": "Fantasy",
+    "image": "assets/HarryPotter.jpeg",
+    "price": "$450 $650 $950",
+    "date": "11/3/2024 ",
+    "time": "1600-1900",
+    "venue": "Hong Kong Cultural Centre",
+    "description": "This is a Harry Potter Concert"
+  },
+
+  {
+    "name": "THIS IS MC",
+    "id": "MC",
+    "type": "POP",
+    "image": "assets/MC.jpg",
+    "price": "$450 $650 $950",
+    "date": "11/5/2024 ",
+    "time": "1600-1900",
+    "venue": "Hong Kong Cultural Centre",
+    "description": "This is a MC Concert"
+  },
+
+  {
+    "name": "YOASOBI",
+    "id": "YOASOBI",
+    "type": "J-POP",
+    "image": "assets/YOASOBI.jpeg",
+    "price": "$450 $650 $950",
+    "date": "11/6/2024",
+    "time": "1600-1900",
+    "venue": "Hong Kong Cultural Centre",
+    "description": "This is a YOASOBI Concert"
+  }
+]

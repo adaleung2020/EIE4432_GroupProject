@@ -1,0 +1,12 @@
+[
+  {
+    "username": "polyu",
+    "password": "12345678",
+    "email": "poly@gmail.com",
+    "phone": "12345678",
+    "birth": "2023-11-15",
+    "role": "users"
+  },
+
+  { "username": "admin", "password": "adminpass", "role": "admin" }
+]

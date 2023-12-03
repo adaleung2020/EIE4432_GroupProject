@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <title>Concert Ticket Selling System</title>
+  <body>
+    <div class="navbar">
+      <div class="home">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      </div>
+      <div class="logo align-items-center">
+        <img src="assets/Logo.png" width="65" height="55" />
+      </div>
+      <div class="logsign">
+        <a class="active" href="login.html"><i class="fa fa-fw fa-user"></i> LogIn</a>
+        <a class="b1 d-none" id="logout">Logout</a>
+      </div>
+    </div>
+
+    <div class="container p-3 d-flex justify-content-center" >
+      <div class="login" >
+        <form action="/auth/login" method="post" class="form" enctype="multipart/form-data">
+          <h3>Login Here</h3>
+
+          <label for="username">Username</label>
+          <input type="text" placeholder="Email or Phone" id="username" />
+
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <div class="p-2"><button type="button" id="forgotPassword">Forgot password?</button></div>
+          <button class="b1" type="button" id="login">Log In</button>
+          <a href="registration.html"><button class="b2">Create a account</button></a>
+        </form>
+        </div>
+        <div class="Reset" id="Reset" style="display: none">
+          <form action="/auth/reset-password" method="post" class="form" enctype="multipart/form-data">
+            <h3>Reset Password</h3>
+
+            <label for="username">Username</label>
+            <input type="text" placeholder="username" id="Rusername" />
+
+            <label for="password">New Password</label>
+            <input type="password" placeholder="Password" id="Rpassword" />
+            <button class="b1" type="button" id="resetpassword">Reset Password</button>
+
+          </form>
+        </div>
+          <!-- <script>
+                    // Function to handle idle timeout
+                    var idleTimeout;
+
+                    function resetIdleTimeout() {
+                    clearTimeout(idleTimeout);
+                    idleTimeout = setTimeout(function () {
+                        // Perform logout when idle timeout occurs
+                        $('#logout').click();
+                    }, 300000); // 5 minutes (adjust as needed)
+                    }
+
+                    // Reset idle timeout on user interaction
+                    $(document).on('keypress click', function () {
+                    resetIdleTimeout();
+                    });
+
+                    // Initialize idle timeout on page load
+                    resetIdleTimeout();
+                </script> -->
+
+      </div>
+    </div>
+    <footer class="text-white fixed-bottom p-3 text-center">Concert Ticket Selling System</footer>
+  </body>
+</html>
